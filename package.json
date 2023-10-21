@@ -1,0 +1,9 @@
+{
+    "name": "svg-generator",
+    "devDependencies": {
+        "jest": "29.7.0"
+    },
+    "dependencies": {
+        "inquirer": "^8.2.4"
+    }
+}
