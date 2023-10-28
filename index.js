@@ -20,18 +20,22 @@ const questions =[{
 }
 ]
 inquirer.prompt (questions).then (answerObject=>{
-    if (answerObject.shape=="Circle"){
+    console.log (answerObject)
+    if (answerObject.shape==="circle"){
         const circle=new Circle(answerObject.text,answerObject.textColor,answerObject.shapeColor)
-        fs.writeFileSync("./examples/logo.svg",circle.render())
+        console.log (circle)
+       return fs.writeFileSync("./examples/logo.svg",circle.render())
     } 
-    if (answerObject.shape=="Square"){
+    if (answerObject.shape==="square"){
         const square=new Square(answerObject.text,answerObject.textColor,answerObject.shapeColor)
-        fs.writeFileSync("./examples/logo.svg",square.render())
+        console.log (square)
+       return fs.writeFileSync("./examples/logo.svg",square.render())
     
     }
-    if (answerObject.shape=="Triangle"){
+    if (answerObject.shape==="triangle"){
         const triangle=new Triangle(answerObject.text,answerObject.textColor,answerObject.shapeColor)
-        fs.writeFileSync("./examples/logo.svg",triangle.render())
+      console.log (triangle)
+        return fs.writeFileSync("./examples/logo.svg",triangle.render())
     
     }
 })

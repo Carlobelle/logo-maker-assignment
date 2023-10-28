@@ -1,1 +1,3 @@
 # logo-maker-assignment
+title : svg 
+description:this program is about making a logo and you can choose only choose one of three shapes at a time .and the three shapes are circle,square and triangle . you can choose any color and type any words of your choice to create your own logo and test it to see if it works and after when you run it by the end it should show that you have past the test if you did the codes right .
